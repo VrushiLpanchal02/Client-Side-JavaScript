@@ -5,3 +5,12 @@ let isSuperhero = Math.random() > 0.5;
 let specialPowers = ["laser eyes", "super speed", "teleportation", "mind reading", "flying"];
 let favoriteFood = "pizza";
 
+// Function to update the character's description
+function updateDescription() {
+    const randomPower = specialPowers[Math.floor(Math.random() * specialPowers.length)];
+    const heroStatus = isSuperhero ? "a superhero" : "not a superhero";
+
+    const description = `Meet ${characterName}, a ${age}-year-old who loves ${favoriteFood}. They are ${heroStatus}, and their special power is ${randomPower}!`;
+
+    document.getElementById("characterDescription").innerText = description;
+}
