@@ -14,3 +14,16 @@ function updateDescription() {
 
     document.getElementById("characterDescription").innerText = description;
 }
+
+// Function to generate a random character description
+function generateRandomCharacter() {
+    const names = ["Captain Waffles", "Sir Pickle", "Lady Banana", "Professor Noodle", "Agent Mango"];
+    const foods = ["tacos", "sushi", "waffles", "spaghetti", "burgers"];
+
+    characterName = names[Math.floor(Math.random() * names.length)];
+    age = Math.floor(Math.random() * 80) + 5;
+    favoriteFood = foods[Math.floor(Math.random() * foods.length)];
+    isSuperhero = Math.random() > 0.5;
+
+    updateDescription();
+}
