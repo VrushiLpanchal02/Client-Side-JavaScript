@@ -56,3 +56,9 @@ function updateCharacter() {
 
     updateDescription();
 }
+
+// Add event listeners for buttons
+document.querySelector("#generateButton").addEventListener("click", generateRandomCharacter);
+document.querySelector("#increaseAgeButton").addEventListener("click", increaseAge);
+document.querySelector("#decreaseAgeButton").addEventListener("click", decreaseAge);
+document.querySelector("#updateButton").addEventListener("click", updateCharacter);
