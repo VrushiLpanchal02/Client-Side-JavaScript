@@ -27,3 +27,16 @@ function generateRandomCharacter() {
 
     updateDescription();
 }
+
+// Functions to update character's age
+function increaseAge() {
+    age++;
+    updateDescription();
+}
+
+function decreaseAge() {
+    if (age > 0) {
+        age--;
+    }
+    updateDescription();
+}
