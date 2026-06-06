@@ -62,3 +62,6 @@ document.querySelector("#generateButton").addEventListener("click", generateRand
 document.querySelector("#increaseAgeButton").addEventListener("click", increaseAge);
 document.querySelector("#decreaseAgeButton").addEventListener("click", decreaseAge);
 document.querySelector("#updateButton").addEventListener("click", updateCharacter);
+
+// Initialize description on page load
+updateDescription();
