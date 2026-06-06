@@ -40,3 +40,19 @@ function decreaseAge() {
     }
     updateDescription();
 }
+
+// Function to update the character's description after changing age
+function updateCharacter() {
+    const newName = document.querySelector("#nameInput").value;
+    const newAge = parseInt(document.querySelector("#ageInput").value);
+
+    if (newName) {
+        characterName = newName;
+    }
+
+    if (!isNaN(newAge)) {
+        age = newAge;
+    }
+
+    updateDescription();
+}
